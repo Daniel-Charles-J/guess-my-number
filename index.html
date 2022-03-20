@@ -4,10 +4,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Guess MY number</title>
+    <title>Guess My Number</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <script src="./script.js"></script>
+    <div class="container">
+        <header class="header">
+            <h1 class="head">Number Guessing Game</h1>
+            <div class="para">
+                <p class="between">Try and guess a random number betweeen 1 to 40</p>
+                <p class="attempts">You have 20 attempts to find the number</p>
+            </div>
+            
+        </header>
+        <main class="main">
+            <button class="btn btn-again" id="btn-again">Again</button>
+            <h1 class="guess" id="guess">Guess a Number</h1>
+            <input type="number" class="input" id="input">
+            <button class="btn-submit btn" id="btn-submit">Submit Guess</button>
+            <div class="scr">
+                <p class="score"> ✔ Score : <span class="score-value" id="score">20</span></p>
+                <p class="high-score"> 🎉 High Score : <span class="high-value" id="high-score">0</span></p>
+            </div>
+        </main>
+    </div>
+    
+    <script src="./scripts.js"></script>
 </body>
 </html>
